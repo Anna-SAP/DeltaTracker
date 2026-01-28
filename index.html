@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L10n History Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              royal: {
+                blue: '#002366',      // Classic Royal Blue
+                blueDark: '#001540',  // Darker shade for hover/active
+                light: '#EBF2FF',     // Very light blue for backgrounds
+                gold: '#D97706',      // High contrast accent (Amber-600)
+                text: '#111827',      // Gray-900 for primary text
+                muted: '#4B5563',     // Gray-600 for secondary text
+                border: '#CBD5E1',    // Slate-300 for distinct borders
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F0F2F5; /* Light gray for high contrast against white cards */
+        color: #111827;
+      }
+      /* High Contrast Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #E2E8F0;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #002366; /* Royal Blue */
+        border-radius: 6px;
+        border: 2px solid #E2E8F0;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #001540;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "xlsx": "https://esm.sh/xlsx@^0.18.5",
+    "clsx": "https://esm.sh/clsx@^2.1.1",
+    "fuse.js": "https://esm.sh/fuse.js@^7.1.0",
+    "react-window": "https://esm.sh/react-window@1.8.10?external=react,react-dom",
+    "react-virtualized-auto-sizer": "https://esm.sh/react-virtualized-auto-sizer@1.0.24?external=react,react-dom"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

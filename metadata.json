@@ -1,0 +1,5 @@
+{
+  "name": "🔖 DeltaTracker",
+  "description": "A high-performance localization string tracking system with a dopamine-inducing macaron UI. Features fuzzy search, Excel parsing, and virtualized lists for large datasets.",
+  "requestFramePermissions": []
+}
